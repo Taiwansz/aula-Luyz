@@ -9,4 +9,4 @@ Atividade prática de Programação Orientada a Objetos (POO) em Java.
 - Instanciação e teste dos métodos no `Main.java`.
 
 ---
-Feito por Luyz Chavoso
+Feito para o Luyz Chavoso
