@@ -5,7 +5,7 @@ public class Main {
         ContaBancaria contaDoFelipe = new ContaBancaria("Felipe Pinete", "65432-1", "0001", "987.654.321-11");
         ContaBancaria contaDoLuyz = new ContaBancaria("Luyz Chavoso", "99999-9", "0002", "555.444.333-22");
 
-        System.out.println("--- Dados do Cliente ---");
+        System.out.println("=== Dados do Cliente ===");
         System.out.println("Titular: " + contaDoMatheus.titular);
         System.out.println("Numero da Conta: " + contaDoMatheus.numeroConta);
         System.out.println("Agencia: " + contaDoMatheus.agencia);
