@@ -1,0 +1,344 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill bg-white bg-opacity-10 border border-white border-opacity-20 text-silver mb-3">
+                        <i class="fa-solid fa-sparkles text-warning"></i> O Ícone Máximo das Estradas
+                    </div>
+                    <h1 class="hero-title">FIAT IDEA PRATA</h1>
+                    <p class="hero-sub">
+                        O ápice absoluto da engenharia automotiva mundial. Não é apenas um carro: é uma declaração de sabedoria, conforto inigualável e pintura prata reluzente que atrai todos os olhares.
+                    </p>
+                    
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="#louvor" class="btn btn-silver">
+                            <i class="fa-solid fa-heart me-2"></i> Venerar o Idea Prata
+                        </a>
+                        <a href="#galeria" class="btn btn-outline-light rounded-pill px-4 fw-semibold d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-images"></i> Galeria Sagrada
+                        </a>
+                    </div>
+
+                    <!-- Stats Badges -->
+                    <div class="row g-3">
+                        <div class="col-6 col-sm-4">
+                            <div class="stat-pill">
+                                <div class="stat-num">∞</div>
+                                <div class="stat-label">Respeito no Asfalto</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <div class="stat-num text-warning">100%</div>
+                            <div class="stat-label">Conforto do Teto Alto</div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="stat-num text-info">Prata</div>
+                            <div class="stat-label">Brilho Eterno</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="col-lg-6">
+                    <div class="hero-img-box">
+                        <img src="{{ url_for('static', filename='images/idea_hero.jpg') }}" alt="Fiat Idea Prata no Pôr do Sol">
+                        <div class="img-badge">
+                            <i class="fa-solid fa-crown text-warning me-2"></i> Fiat Idea Prata em Versão Divina
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS E LOUVOR -->
+    <section class="py-5" id="louvor">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white mb-2">Mural dos Veneradores</h2>
+                <p class="text-muted fs-5">Veja o que as maiores mentes pensam sobre a lenda do Fiat Idea Prata</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1: Luyz Chavoso -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="avatar-icon">LC</div>
+                            <div>
+                                <h5 class="mb-0 text-white fw-bold">Luyz Chavoso</h5>
+                                <small class="text-muted">Apreciador de Carros Top</small>
+                            </div>
+                        </div>
+                        <p class="text-light italic">
+                            "Eu pensei em comprar um Porsche, mas aí dirigi um Fiat Idea Prata 1.8. O teto é tão alto que cabe a minha autoestima! Não tem igual!"
+                        </p>
+                        <div class="text-warning">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Matheus Sousa -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="avatar-icon">MS</div>
+                            <div>
+                                <h5 class="mb-0 text-white fw-bold">Matheus Sousa</h5>
+                                <small class="text-muted">Especialista em Lataria</small>
+                            </div>
+                        </div>
+                        <p class="text-light">
+                            "A cor Prata Barataria no Fiat Idea reflete a luz do sol numa frequência que acalma até o trânsito da Marginal. Passo na lombada rindo!"
+                        </p>
+                        <div class="text-warning">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Felipe Pinete -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="avatar-icon">FP</div>
+                            <div>
+                                <h5 class="mb-0 text-white fw-bold">Felipe Pinete</h5>
+                                <small class="text-muted">Piloto de Testes Fictício</small>
+                            </div>
+                        </div>
+                        <p class="text-light">
+                            "Entrei no Idea Prata e imediatamente todos os semáforos ficaram verdes por respeito. Posição de dirigir é simplesmente de rei!"
+                        </p>
+                        <div class="text-warning">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Guilherme Weber -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="avatar-icon">GW</div>
+                            <div>
+                                <h5 class="mb-0 text-white fw-bold">Guilherme Weber</h5>
+                                <small class="text-muted">Criador do Projeto</small>
+                            </div>
+                        </div>
+                        <p class="text-light">
+                            "O motor do Fiat Idea Prata não faz barulho, ele canta sinfonias mecânicas no trânsito. A cada km rodado a lenda se fortalece!"
+                        </p>
+                        <div class="text-warning">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA SAGRADA -->
+    <section class="py-5" id="galeria">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white mb-2">Galeria Sagrada de Imagens</h2>
+                <p class="text-muted fs-5">Registros da máquina suprema em toda a sua glória metálica</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Imagem 1 -->
+                <div class="col-md-4">
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/idea_hero.jpg') }}" alt="Idea Prata no Pôr do Sol">
+                        <div class="gallery-overlay">
+                            <h5 class="fw-bold mb-1">O Despertar da Lenda</h5>
+                            <small class="text-silver">Idea Prata no Pôr do Sol nas Montanhas</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagem 2 -->
+                <div class="col-md-4">
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/idea_garage.jpg') }}" alt="Idea Prata no Estúdio">
+                        <div class="gallery-overlay">
+                            <h5 class="fw-bold mb-1">Santuário Futurista</h5>
+                            <small class="text-silver">Idea Prata em Estúdio Neon High-Tech</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagem 3 -->
+                <div class="col-md-4">
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/idea_speed.jpg') }}" alt="Idea Prata em Alta Velocidade">
+                        <div class="gallery-overlay">
+                            <h5 class="fw-bold mb-1">Dobra Espacial</h5>
+                            <small class="text-silver">Navegando a Rodovia Noturna</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FICHA TÉCNICA -->
+    <section class="py-5" id="especificacoes">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-white mb-4">Especificações Divinas do Idea Prata</h2>
+                    
+                    <div class="d-flex gap-3 mb-4">
+                        <div class="fs-2 text-info"><i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+                        <div>
+                            <h5 class="text-white fw-bold">Teto Elevado de Luxo</h5>
+                            <p class="text-muted mb-0">Permite dirigir usando cartola ou coroa sem encostar no teto do veículo.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3 mb-4">
+                        <div class="fs-2 text-warning"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <div>
+                            <h5 class="text-white fw-bold">Pintura Prata Barataria</h5>
+                            <p class="text-muted mb-0">Reflete 99.9% dos raios ultravioleta e 100% da inveja dos motoristas de carro popular.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3 mb-4">
+                        <div class="fs-2 text-success"><i class="fa-solid fa-couch"></i></div>
+                        <div>
+                            <h5 class="text-white fw-bold">Poltronas de Conforto Supremo</h5>
+                            <p class="text-muted mb-0">Ergonomia desenhada para longas viagens sem nenhuma dor nas costas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="glass-card p-4">
+                        <h4 class="text-white fw-bold mb-4"><i class="fa-solid fa-list-check me-2 text-primary"></i> Atributos do Veículo Perfeito</h4>
+                        <ul class="list-group list-group-flush bg-transparent">
+                            <li class="list-group-item bg-transparent text-light border-secondary border-opacity-25 d-flex justify-content-between">
+                                <span><i class="fa-solid fa-car me-2 text-silver"></i> Modelo</span>
+                                <strong class="text-white">Fiat Idea Prata</strong>
+                            </li>
+                            <li class="list-group-item bg-transparent text-light border-secondary border-opacity-25 d-flex justify-content-between">
+                                <span><i class="fa-solid fa-gauge-high me-2 text-warning"></i> Potência Emocional</span>
+                                <strong class="text-warning">Mais de 8000</strong>
+                            </li>
+                            <li class="list-group-item bg-transparent text-light border-secondary border-opacity-25 d-flex justify-content-between">
+                                <span><i class="fa-solid fa-palette me-2 text-info"></i> Cor Sagrada</span>
+                                <strong class="text-info">Prata Metálico Reluzente</strong>
+                            </li>
+                            <li class="list-group-item bg-transparent text-light border-secondary border-opacity-25 d-flex justify-content-between">
+                                <span><i class="fa-solid fa-shield-halved me-2 text-success"></i> Nível de Aura</span>
+                                <strong class="text-success">Inquebrável</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GERADOR INTERATIVO DE ELOGIOS -->
+    <section class="py-5" id="gerador">
+        <div class="container">
+            <div class="generator-box">
+                <span class="badge bg-primary px-3 py-2 rounded-pill mb-3 fs-6">Sintetizador Divino</span>
+                <h2 class="display-6 fw-bold text-white mb-2">Gerador Instantâneo de Louvor ao Idea Prata</h2>
+                <p class="text-muted">Clique no botão abaixo para gerar uma declaração de amor ao melhor carro já feito!</p>
+
+                <div class="praise-output" id="praiseText">
+                    "O Fiat Idea Prata não precisa de freio, o mundo desacelera para ele passar!"
+                </div>
+
+                <button class="btn btn-silver btn-lg shadow-lg" onclick="gerarElogio()">
+                    <i class="fa-solid fa-rotate me-2"></i> Gerar Novo Elogio ao Idea Prata
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- MURAL DE DEVOÇÃO INTERATIVO -->
+    <section class="py-5" id="comentarios">
+        <div class="container">
+            <div class="glass-card">
+                <h3 class="text-white fw-bold mb-3"><i class="fa-solid fa-comments text-info me-2"></i> Deixe seu comentário sobre o Fiat Idea Prata</h3>
+                
+                <form id="commentForm" onsubmit="adicionarComentario(event)" class="mb-4">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <input type="text" id="autorInput" class="form-control bg-dark text-white border-secondary" placeholder="Seu Nome (ex: Luyz Chavoso)" required>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" id="textoInput" class="form-control bg-dark text-white border-secondary" placeholder="Digite seu louvor ao Idea Prata..." required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3 rounded-pill px-4">
+                        <i class="fa-solid fa-paper-plane me-2"></i> Enviar Louvor
+                    </button>
+                </form>
+
+                <div id="listaComentarios" class="d-flex flex-column gap-3">
+                    <div class="p-3 rounded-3 bg-dark bg-opacity-50 border border-secondary border-opacity-25">
+                        <strong class="text-info">Luyz Chavoso:</strong>
+                        <span class="text-light ms-2">"Esse site ficou sensacional! O Idea Prata é o carro supremo da galáxia!"</span>
+                    </div>
+                    <div class="p-3 rounded-3 bg-dark bg-opacity-50 border border-secondary border-opacity-25">
+                        <strong class="text-warning">Matheus Sousa:</strong>
+                        <span class="text-light ms-2">"Se o Fiat Idea Prata tiver 1 milhão de fãs, eu sou um deles. Se tiver 1 fã, esse fã sou eu!"</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script>
+const elogios = [
+    '"O Fiat Idea Prata não precisa de freio, o mundo desacelera para ele passar!"',
+    '"Quando a NASA precisa testar aerodinâmica perfeita, eles estudam o teto do Fiat Idea Prata."',
+    '"A cor Prata do Fiat Idea reflete 100% da inveja alheia e 200% de elegância."',
+    '"Se o Batman soubesse das vantagens do teto alto do Idea Prata, o Batmóvel seria um Idea 1.8 Flex!"',
+    '"O Fiat Idea Prata não anda na rua, a rua se ajusta sob as rodas dele."',
+    '"Outros carros têm cavalos no motor. O Fiat Idea Prata tem pégasos celestiais!"',
+    '"Você não escolhe o Fiat Idea Prata. O Fiat Idea Prata escolhe você para ser digno!"'
+];
+
+function gerarElogio() {
+    const box = document.getElementById("praiseText");
+    const randomIndex = Math.floor(Math.random() * elogios.length);
+    box.style.opacity = 0;
+    setTimeout(() => {
+        box.innerText = elogios[randomIndex];
+        box.style.opacity = 1;
+    }, 200);
+}
+
+function adicionarComentario(event) {
+    event.preventDefault();
+    const autor = document.getElementById("autorInput").value;
+    const texto = document.getElementById("textoInput").value;
+    
+    if(autor && texto) {
+        const lista = document.getElementById("listaComentarios");
+        const novoComentario = document.createElement("div");
+        novoComentario.className = "p-3 rounded-3 bg-dark bg-opacity-50 border border-secondary border-opacity-25";
+        novoComentario.innerHTML = `<strong class="text-success">${autor}:</strong> <span class="text-light ms-2">"${texto}"</span>`;
+        lista.prepend(novoComentario);
+        
+        document.getElementById("autorInput").value = "";
+        document.getElementById("textoInput").value = "";
+    }
+}
+</script>
+{% endblock conteudo %}
